@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/astro-icon-light.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Astro - A Dive Into the Innovative Framework that Lets You Deliver
+      Zero-JavaScript Solutions.
+    </title>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- ! INTRODUCTION -->
+        <section data-descr="Welcome slide">
+          <img
+            class="block"
+            src="/assets/astro-logo-light-gradient.png"
+            alt=""
+          />
+          <p class="text-4xl mx-auto w-3/5">
+            A Dive Into the Innovative Framework that Lets You Deliver
+            Zero-JavaScript Solutions
+          </p>
+          <aside class="notes"></aside>
+        </section>
+
+        <!-- ! WHOAMI -->
+        <section data-descr="Who am I">
+          <div class="flex content-center">
+            <div class="mx-auto w-1/2">
+              <img class="block" src="/assets/PP_nonform 2.png" alt="" />
+            </div>
+            <div class="w-1/2 text-left flex flex-col justify-center">
+              <h1 class="text-6xl">Piotr Petrycki</h1>
+              <p class="text-4xl my-0">
+                Software Engineer
+                <span class="text-blue-500">@Schibsted</span>
+              </p>
+              <p class="text-4xl my-0">Speaker & Mentor IT</p>
+            </div>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>Warm greeting</li>
+              <li>
+                Encourage participants to actively engage, ask questions, and
+                share their thoughts throughout the presentation
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-descr="Welcome slide" data-auto-animate>
+          <div class="flex">
+            <div class="mx-auto w-1/2">
+              <img
+                class="block"
+                src="/assets/astro-logo-light-gradient.png"
+                alt=""
+              />
+            </div>
+            <div class="w-1/2">
+              <h1 class="text-6xl">What is Astro?</h1>
+              <p class="text-4xl">
+                A Dive Into the Innovative Framework that Lets You Deliver
+                Zero-JavaScript Solutions
+              </p>
+            </div>
+          </div>
+          <aside class="notes">
+            <ul>
+              <li>OPENER: Astro. Who heard? Who used?</li>
+              <li>
+                How come? Story about how I was trying to write a simple blog
+                (Story of Timpani)
+              </li>
+              <li>
+                Objectives:
+                <ul>
+                  <li>Share background story of Astro</li>
+                  <li>Explore its functionalities</li>
+                  <li>
+                    Get you familiar enough to start experimenting with tech
+                  </li>
+                </ul>
+              </li>
+              <li>Answer questions:
+                <ul>
+                  <li>What is Astro?</li>
+                  <li>Why Astro?</li>
+                  <li>What ppl do with Astro?</li>
+                  <li>How Astro compares to other tech</li>
+                  <li>How to build with Astro</li>
+                </ul>
+              </li>
+            </ul>
+
+          </aside>
+        </section>
+
+        <section>
+          <h1>Chapter 1</h1>
+          <h2 class="text-4xl">What is Astro?</h2>
+        </section>
+
+        <!-- ! Intro to Astro -->
+        <section data-descr="Title breakdown" data-auto-animate>
+          <div class="flex">
+            <div class="mx-auto w-1/2">
+              <img
+                class="block"
+                src="/assets/astro-logo-light-gradient.png"
+                alt=""
+              />
+            </div>
+            <div class="w-1/2">
+              <h1 class="text-6xl">What is Astro?</h1>
+              <p class="text-4xl">
+                A Dive Into the
+                <span class="text-pink-400"> Innovative Framework</span>
+                that
+                <span class="text-sky-500"
+                  >Lets You Deliver Zero-JavaScript Solutions</span
+                >
+              </p>
+            </div>
+          </div>
+          <aside class="notes">
+            <h3>What is astro?</h3>
+            <ul>
+              <li>Pink: not really a a framework in a traditional sense</li>
+              <li>Sky: Zero-JavaScript, but it ships (minimal) JS</li>
+              <li>Sky: Zero-JavaScript, is built with JS/TS</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-descr="Autodescription" data-background-color="#000">
+          <section>
+            <img
+              class="block w-full h-auto px-12"
+              src="assets/autodescription/general.png"
+              alt=""
+            />
+            <aside class="notes">
+              <p>Astro describes itself as...</p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="block w-full h-auto px-12"
+              src="assets/autodescription/architecture.png"
+              alt=""
+            />
+            <aside class="notes">
+              <p>Promises one best frontend architecture</p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="block w-full h-auto px-12"
+              src="assets/autodescription/performance.png"
+              alt=""
+            />
+            <aside class="notes">
+              <p>At the same time, with unmatched performance</p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="block w-full h-auto px-12"
+              src="assets/autodescription/tools.png"
+              alt=""
+            />
+            <aside class="notes">
+              <p>Promises not to be next react</p>
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <h1>Chapter 2</h1>
+          <h2 class="text-4xl">Why Astro?</h2>
+        </section>
+
+        <section data-descr="The deal?">
+          <h2 class="">What's the deal?</h2>
+          <ul>
+            <li class="fragment">A Build Tool</li>
+            <li class="fragment">Back to fundamentals</li>
+            <li class="fragment">Awesome tools</li>
+            <li class="fragment">Fast</li>
+            <li class="fragment">Performance</li>
+          </ul>
+          <aside class="notes">
+            <p>What does it mean?</p>
+            <p>Astro wants you to imagine itself as a tool that:</p>
+            <ul>
+              <li>that is rather building tool than framework</li>
+              <li>with which building is as easy as writing HTML and CSS</li>
+              <li>that has awesome dev tool and dev experience</li>
+              <li>that builds fast</li>
+              <li>allow you to easily max-out performance and accessibility</li>
+              <li>allows you to build as static or dynamic as you'd like</li>
+              <li>allow you to build with tools you already know</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section data-descr="Stop it please...">
+          <div class="w-full h-0 relative" style="padding-bottom: 68%">
+            <iframe
+              src="https://giphy.com/embed/htXkEPeooMptfl6wP8"
+              width="100%"
+              height="100%"
+              style="position: absolute"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <aside class="notes">
+            <p>So what?</p>
+            <p>So far - 80% marketing 20% promises... </p>
+          </aside>
+        </section>
+
+        <section data-descr="Hypetrain" data-background-color="#000">
+          <img
+            class="w-full h-auto px-24"
+            src="assets/hypeup/hypetrain.jpeg"
+            alt=""
+          />
+          <aside class="notes">
+            <p>Wanted to hype up</p>
+            <p>But I won't, on the contrary</p>
+          </aside>
+        </section>
+
+        <section data-descr="Everything is fine" data-background-color="#000">
+          <div class="w-full h-0 relative" style="padding-bottom: 68%">
+            <iframe
+              src="https://giphy.com/embed/P7JmDW7IkB7TW"
+              width="100%"
+              height="100%"
+              style="position: absolute"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <aside class="notes">
+            <p>
+              Take a minute to acknowledge: We have already too much on our
+              plates
+            </p>
+            <p>Why Astro? Why learning another framework or tool? 🙈</p>
+            <hr />
+            <p>Long story short: Astro tries t o</p>
+            <ul>
+              <li>Expand capabilities of your toolbelt</li>
+              <li>Minimal overhead</li>
+            </ul>
+            <p>Let's see how astro does it</p>
+          </aside>
+        </section>
+        
+        <!-- ! What was built with Astro -->
+
+        <section data-descr="Built with Astro">
+          <section>
+            <h1>Chapter 3</h1>
+            <h2 class="text-4xl">What people build with Astro?</h2>
+            <aside class="notes">
+              <p>
+                Let's check what it can do first
+              </p>
+            </aside>
+          </section>
+
+          <!-- Landings -->
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="assets/builtWAstro/landing/astro.png"
+              alt=""
+            />
+            <aside class="notes">Landing: Astro</aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="assets/builtWAstro/landing/landing-and-app.png"
+              alt=""
+            />
+            <aside class="notes">Landing: Rokit with login</aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="assets/builtWAstro/landing/netlify.png"
+              alt=""
+            />
+            <aside class="notes">Landing: Netlify</aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="assets/builtWAstro/landing/un-landing.png"
+              alt=""
+            />
+            <aside class="notes">Landing: UN site</aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="assets/builtWAstro/landing/personal-site.png"
+              alt=""
+            />
+            <aside class="notes">Landing: Personal site</aside>
+          </section>
+          <!-- Blogs -->
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/blog/firebase-blog.png"
+              alt=""
+            />
+            <aside class="notes">Blog: Firebase</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/blog/trivago.png"
+              alt=""
+            />
+            <aside class="notes">Blog: Trivago</aside>
+          </section>
+          <!-- Docs -->
+
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/doc/microsoft.png"
+              alt=""
+            />
+            <aside class="notes">Docs: Microsoft Fluent</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/doc/starlight-docs.png"
+              alt=""
+            />
+            <aside class="notes">Docs: Starlight framework for docs</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/doc/t3-app-docs.png"
+              alt=""
+            />
+            <aside class="notes">Docs: T3 App docs by Theo</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/doc/more-dynamic-docs.png"
+              alt=""
+            />
+            <aside class="notes">Docs: More dynamic site</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/doc/more-dynamic-docs-2.png"
+              alt=""
+            />
+            <aside class="notes">Docs: More dynamic site</aside>
+          </section>
+
+          <!-- Shop -->
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/shop/test-shop.png"
+              alt=""
+            />
+            <aside class="notes">Shops</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/shop/test-shop-2.png"
+              alt=""
+            />
+            <aside class="notes">Shops</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/shop/test-shop-3.png"
+              alt=""
+            />
+            <aside class="notes">Shops</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/shop/test-shop-4.png"
+              alt=""
+            />
+            <aside class="notes">Shops</aside>
+          </section>
+          <section>
+            <img
+              class="w-full px-16 mx-auto"
+              src="assets/builtWAstro/shop/test-shop-5.png"
+              alt=""
+            />
+            <aside class="notes">Shops</aside>
+          </section>
+        </section>
+
+        <section data-descr="Emerging patterns">
+          <h1 class="mb-16">Emerging patterns</h1>
+          <div class="flex">
+            <ul class="w-1/2 px-24">
+              <li class="fragment">Blogs</li>
+              <li class="fragment">Landings</li>
+              <li class="fragment">Docs</li>
+              <li class="fragment">Shops</li>
+            </ul>
+            <ul class="w-1/2">
+              <li class="fragment">Content first</li>
+              <li class="fragment">Some Static</li>
+              <li class="fragment">Some Dynamic</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ! Why Astro if I know... -->
+
+        <section>
+          <h1>Chapter 4</h1>
+          <h2 class="text-4xl">How does Astro compare to...?</h2>
+        </section>
+
+        <section data-background-color="#fff">
+          <img
+            class="w-full h-full mx-auto"
+            src="/assets/technologies.png"
+            alt=""
+          />
+          <aside class="notes">
+            <p>Question: Where am I going with this?</p>
+            <p>Yet another tool, when we've got so many...</p>
+            
+            <p>Question: Why Astro if I know...</p>
+            <ul>
+              <li>React</li>
+              <li>Vue</li>
+              <li>Svelte</li>
+              <li>Preact</li>
+              <li>Web Components</li>
+            </ul>
+
+            <p>Divide to three groups</p>
+            <ul>
+              <li>SPA's: React, Vue, Svelte, Angular</li>
+              <li>Site Generators: Gatsby, VuePress</li>
+              <li>Full Stack: Next, Nuxt, Remix</li>
+            </ul>
+
+            <p>Astro lets you do all of them - Let's compare</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Rendering patterns</h2>
+          <img
+            class="w-full h-full mx-auto"
+            src="/assets/renderPatterns/classic/all.png"
+            alt=""
+          />
+          <aside class="notes">
+            <h2>Refresher: rendering patterns</h2>
+            <h3>Disclaimer: simplified and high-level</h3>
+          </aside>
+        </section>
+
+        <!-- ! How React and alike work -->
+        <section>
+          <section>
+            <h2 class="mb-16">CSR</h2>
+            <aside class="notes">
+              <p>Client Side Rendering</p>
+              <p>React, Vue, Svelte, Angular</p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/csr/csr-1.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/csr/csr-2.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/csr/csr-3.png"
+              alt=""
+            />
+          </section>
+        </section>
+
+        <!-- ! How Gatsby and alike work -->
+        <section>
+          <section>
+            <h2 class="mb-16">SSG+</h2>
+            <aside class="notes">
+              <p>Static Site Generation +</p>
+              <p>Gatsby, VuePress, Gridsome</p>
+
+              <p>Explain the plus</p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/ssg/ssg-1.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/ssg/ssg-2.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/ssg/ssg-3.png"
+              alt=""
+            />
+          </section>
+        </section>
+
+        <!-- ! How Next.js and alike work -->
+        <section>
+          <section>
+            <h2 class="mb-16">SSR+</h2>
+            <aside class="notes">
+              <p>Server Side Rendering +</p>
+              <p>Next.js, Nuxt.js, Remix</p>
+
+              <p>Explain the plus</p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/ssr/ssr-1.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/ssr/ssr-2.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/classic/ssr/ssr-3.png"
+              alt=""
+            />
+          </section>
+        </section>
+
+        <!-- * Check if PPL still alive -->
+        <section>
+          <h2>R U still with me?</h2>
+          <div>
+            <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/HalYtvkpwMAILlSGef" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div> -->
+            <iframe
+              src="https://giphy.com/embed/WqdSS9sReWBTG"
+              width="480"
+              height="480"
+              frameborder="0"
+              class="giphy-embed mx-auto"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <aside class="notes">
+            <p>This you most likely know</p>
+          </aside>
+        </section>
+
+        <!-- ! How is Astro different -->
+        <section>
+          <h2>
+            Astro does it all<span class="fragment text-fuchsia-400"
+              >, but...</span
+            >
+          </h2>
+          <ul>
+            <li class="fragment">Lean AF by default</li>
+            <li class="fragment">No hydration needed by default</li>
+            <li class="fragment">Opt-in for features</li>
+            <li class="fragment">If dev specifies, hydrates selectively</li>
+            <li class="fragment">
+              Built on a fundamentally different technology
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <img
+            class="w-full h-full mx-auto"
+            src="assets/renderPatterns/astro/all.png"
+            alt=""
+          />
+        </section>
+
+        <!-- ! Astro architecture -->
+        <section>
+          <section>
+            <h2>Astro by default (SSG)</h2>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssg/ssg-1.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssg/ssg-2.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssg/ssg-3.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Astro with Island</h2>
+            <p>(CSR analogy)</p>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssgIsland/ssgi-1.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssgIsland/ssgi-2.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssgIsland/ssgi-3.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Astro with SSR</h2>
+            <p>(SSR+ analogy)</p>
+            <aside class="notes">
+              <p>Explain the slash</p>
+              <p>
+                On GET, HTML is generated freshly (CMS, DB, other sources...)
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssr/ssr-1.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssr/ssr-2.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssr/ssr-3.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Astro with SSR and Island</h2>
+            <p>(SSR+ analogy)</p>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssrIsland/ssri-1.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssrIsland/ssri-2.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <img
+              class="w-full h-full mx-auto"
+              src="/assets/renderPatterns/astro/ssrIsland/ssri-3.png"
+              alt=""
+            />
+            <aside class="notes"></aside>
+          </section>
+        </section>
+
+        <section>
+          <h2>Comparison summary</h2>
+          <div class="flex">
+            <div class="fragment w-1/2">
+              <p>"Plus" Frameworks</p>
+              <ul>
+                <li>Overhead</li>
+                <li>Next</li>
+                <li>Gatsby</li>
+              </ul>
+            </div>
+            <div class="fragment w-1/2">
+              <p>Astro</p>
+              <ul>
+                <li>Does nothing fancy</li>
+                <li>No/Minimum JS by default</li>
+                <li>Islands</li>
+                <li>Builds to Static or MPA</li>
+                <li>Output configurability</li>
+              </ul>
+            </div>
+          </div>
+          
+          <aside class="notes">
+            <p>Classicly:</p>
+            <ul>
+              <li>"plus" frameworks do a lot more in background by design</li>
+              <li>Astro lowers the overhead</li>
+              <li>
+                Islands: selective hydration, sprinkling hydration where needed
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- ! 14. Astro basics -->
+
+        <section>
+          <h1>Chapter 5</h1>
+          <h2>How to Astro</h2>
+        </section>
+
+        <section>
+          <h2>
+            Ok, <span class="text-orange-400">Astro</span>. <span class="fragment text-fuchsia-500">But... how?</span>
+          </h2>
+          <div class="fragment">
+            <div
+              style="
+                width: 100%;
+                height: 0;
+                padding-bottom: 56%;
+                position: relative;
+              "
+            >
+              <iframe
+                src="https://giphy.com/embed/h4Z6RfuQycdiM"
+                width="100%"
+                height="100%"
+                style="position: absolute"
+                frameborder="0"
+                class="giphy-embed"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <aside class="notes">
+            <p>How does Astro do it?</p>
+            <p>How does Astro hydrate?</p>
+            <p>SPA in MPA?</p>
+            <p>WTF?!</p>
+          </aside>
+        </section>
+
+        <!-- Project setup -->
+        <section>
+          <section>
+            <h2>Live Demo!</h2>
+            <ul>
+              <li>Project setup</li>
+              <li>Astro files</li>
+              <li>Content Collections</li>
+              <li>Reactivity: Islands</li>
+              <li>View Transitions API</li>
+            </ul>
+            <aside class="notes">
+              <p>Decided to do live demo to show how easy it is to start with Astro</p>
+              <ul>
+                <li>
+                  Islands: selective hydration, sprinkling hydration where
+                  needed
+                </li>
+                <li>
+                  You can make island to be a single button, or a whole page
+                </li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+
+        <!-- Exotic Example -->
+        <section>
+          <section>
+            <h2>Exotic Example</h2>
+            <p>Astro MPA and Microfrontends?! 🤯</p>
+          </section>
+        </section>
+
+        <!-- ! Summary -->
+        <section>
+          <h2>Summary</h2>
+          <ul>
+            <li class="fragment">Yet another tool in your toolbelt</li>
+            <li class="fragment">Bring Your Own Tools</li>
+            <li class="fragment">Develop closer to the browser</li>
+            <li class="fragment">Super easy learning curve</li>
+            <li class="fragment">You decide the compromises</li>
+            <li class="fragment">Grows and adopts very quickly</li>
+            <li class="fragment">Performance, DX, SEO, A11y</li>
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li>Yet another tool in your toolbelt</li>
+              <li>Bring Your Own Tools</li>
+              <li>Develop closer to the browser</li>
+              <li>Super easy learning curve</li>
+              <li>You decide the compromises</li>
+              <li>Grows and adopts very quickly</li>
+              <li>Performance, DX, SEO, Accessibility</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Summary 2</h2>
+          <ul>
+            <li class="fragment">Content driven websites</li>
+            <li class="fragment">Not a Next/Nuxt replacement</li>
+            <li class="fragment">Maybe a Gatsby replacement 😅</li>
+          </ul>
+          <aside class="notes">
+            Bottom line: 
+            <ul>
+              <li>Great when you need something simple</li>
+              <li>Grows with your needs nicely</li>
+              <li>Lets you build the tools you already know</li>
+            </ul> 
+          </aside>
+        </section>
+        
+        <!-- Thank you and QR code for feedback form -->
+        <section>
+          <h1>Thank you!</h1>
+          <p>What are you going to build with Astro?</p>
+        </section>
+
+        <section>
+          <h1>Q&A</h1>
+        </section>
+
+        <section>
+          <div class="flex">
+            <div class="w-1/2">
+              <p>Feedback Form</p>
+              <img class="mx-auto" src="/assets/FEEDBACK.png" alt="">
+            </div>
+            <div class="w-1/2">
+              <p>LinkedIn</p>
+              <img
+                class="mx-auto"
+                src="/assets/LI.JPG"
+              />
+            </div>
+          </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
